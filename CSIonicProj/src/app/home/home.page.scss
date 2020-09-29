@@ -29,11 +29,11 @@ ion-item {
 
   ion-label {
     position: absolute;
-    bottom: 50px;
-    text-decoration: underline;
+    top: 0;
   }
 
   ion-text-area{
-    padding-bottom: 10px;
+    height: 100px;
+    margin-top: 100px;
   }
 }
