@@ -8,48 +8,42 @@
   
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" ng-controller="homeCtrl">
   <!-- <ion-header collapse="condense" -->
     <div class="row">
       <div class="toDo">
         <ion-card-header>
             <ion-card-title class="title">To Do</ion-card-title>
-            <ion-icon name="add-circle" class="addBtn" (click)="addToDo"></ion-icon>
+            <ion-icon name="add-circle" class="addBtn" (click)="openModalTodo()"></ion-icon>
           </ion-card-header>
         
           <ion-card-content>
-            <ion-item>
-              <ion-label position="fixed">Fixed</ion-label>
-              <ion-textarea class="ion-margin-top"></ion-textarea>
-            </ion-item>
+            <!-- <ion-item>
+            </ion-item> -->
           </ion-card-content>
       </div>
   
       <div class="toDo">
         <ion-card-header>
             <ion-card-title>In Progress</ion-card-title>
-            <ion-icon name="add-circle" class="addBtn" (click)="addInProgress"></ion-icon>
+            <ion-icon name="add-circle" class="addBtn" (click)="openModalInprogress()"></ion-icon>
           </ion-card-header>
         
           <ion-card-content>
-            <ion-item>
-              <ion-label position="fixed">Fixed</ion-label>
-              <ion-textarea class="ion-margin-top"></ion-textarea>
-            </ion-item>
+            <!-- <ion-item>
+            </ion-item> -->
           </ion-card-content>
       </div>
   
       <div class="toDo">
         <ion-card-header>
             <ion-card-title>Done</ion-card-title>
-            <ion-icon name="add-circle" class="addBtn" (click)="addDone"></ion-icon>
+            <ion-icon name="add-circle" class="addBtn" (click)="openModalDone()"></ion-icon>
           </ion-card-header>
         
           <ion-card-content>
-            <ion-item>
-              <ion-label position="fixed">Fixed</ion-label>
-              <ion-textarea class="ion-margin-top"></ion-textarea>
-            </ion-item>
+            <!-- <ion-item>
+            </ion-item> -->
           </ion-card-content>
       </div>
     </div>

@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'modals',
+    loadChildren: () => import('./modals/todo/todo.module').then( m => m.TodoPageModule)
+  },
+  {
+    path: 'inprogress',
+    loadChildren: () => import('./modals/inprogress/inprogress.module').then( m => m.InprogressPageModule)
+  },
+  {
+    path: 'done',
+    loadChildren: () => import('./modals/done/done.module').then( m => m.DonePageModule)
+  },
 ];
 
 @NgModule({
