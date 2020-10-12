@@ -1,0 +1,26 @@
+// .todo {
+//     height: 300px;
+//     margin: 10px;
+// }
+
+textarea {
+    padding: 10px;
+    margin: 10px;
+    max-height: 100px !important;
+}
+
+.saveTodo {
+    float: right;
+}
+
+.scroll-y {
+    height: 100%;
+    // overflow-y: unset !important;
+    overflow: hidden !important;
+}
+
+// .content{
+//     background-color: red;
+//     padding: 30px !important;
+//     max-height: 200px !important;
+// }
